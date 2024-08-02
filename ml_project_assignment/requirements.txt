@@ -1,0 +1,8 @@
+pandas
+numpy
+seaborn
+matplotlib
+flask
+datetime
+scikit-learn
+pymongo[srv]

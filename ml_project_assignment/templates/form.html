@@ -1,0 +1,110 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    <div class="form-group">
+        <label for="mean_radius">mean radius:</label>
+        <input type="text" id="mean_radius" name="mean_radius" placeholder="Enter carat value (float)">
+    </div>
+
+    <div class="form-group">
+        <label for="mean_texture">mean texture:</label>
+        <input type="text" id="mean_texture" name="mean_texture" placeholder="Enter depth value (float)">
+    </div>
+
+    <div class="form-group">  
+        <label for="mean_smoothness">mean_smoothness:</label>
+        <input type="text" id="mean_smoothness" name="mean_smoothness" placeholder="Enter table value (float)">
+    </div>
+    
+    <div class="form-group">
+        <label for="mean_compactness">x:</label>
+        <input type="text" id="mean_compactness" name="mean_compactness" placeholder="Enter x value (float)">
+    </div>
+  
+    <div class="form-group">
+        <label for="mean_concavity">mean_concavity:</label>
+        <input type="text" id="mean_concavity" name="mean_concavity" placeholder="Enter y value (float)">
+    </div>
+  
+    <div class="form-group">
+        <label for="mean_symmetry">mean_symmetry:</label>
+        <input type="text" id="mean_symmetry" name="mean_symmetry" placeholder="Enter z value (float)">
+    </div>
+    
+    <div class="form-group">
+      <label for="mean_fractal_dimension">mean_fractal_dimension:</label>
+      <input type="text" id="mean_fractal_dimension" name="mean_fractal_dimension" placeholder="Enter z value (float)">
+    </div>
+
+    <div class="form-group">
+      <label for="radius_error">radius_error:</label>
+      <input type="text" id="radius_error" name="radius_error" placeholder="Enter z value (float)">
+    </div>
+
+    <div class="form-group">
+      <label for="texture_error">texture_error:</label>
+      <input type="text" id="texture_error" name="texture_error" placeholder="Enter z value (float)">
+    </div>
+  
+    <div class="form-group">
+      <label for="smoothness_error">smoothness_error:</label>
+      <input type="text" id="smoothness_error" name="smoothness_error" placeholder="Enter z value (float)">
+    </div>
+
+    <div class="form-group">
+      <label for="compactness_error">compactness_error:</label>
+      <input type="text" id="compactness_error" name="compactness_error" placeholder="Enter z value (float)">
+    </div>
+
+    <div class="form-group">
+      <label for="concavity_error">concavity_error:</label>
+      <input type="text" id="concavity_error" name="concavity_error" placeholder="Enter z value (float)">
+    </div>
+
+    <div class="form-group">
+      <label for="concave_points_error">concave_points_error:</label>
+      <input type="text" id="concave_points_error" name="concave_points_error" placeholder="Enter z value (float)">
+    </div>
+
+    <div class="form-group">
+      <label for="symmetry_error">symmetry_error:</label>
+      <input type="text" id="symmetry_error" name="symmetry_error" placeholder="Enter z value (float)">
+    </div>
+
+    <div class="form-group">
+      <label for="fractal_dimension_error">fractal_dimension_error:</label>
+      <input type="text" id="fractal_dimension_error" name="fractal_dimension_error" placeholder="Enter z value (float)">
+    </div>
+
+    <div class="form-group">
+      <label for="worst_smoothness">worst_smoothness:</label>
+      <input type="text" id="worst_smoothness" name="worst_smoothness" placeholder="Enter z value (float)">
+    </div>
+
+    <div class="form-group">
+      <label for="worst_compactness">worst_compactness:</label>
+      <input type="text" id="worst_compactness" name="worst_compactness" placeholder="Enter z value (float)">
+    </div>
+
+    <div class="form-group">
+      <label for="worst_concavity">worst_concavity:</label>
+      <input type="text" id="worst_concavity" name="worst_concavity" placeholder="Enter z value (float)">
+    </div>
+
+    <div class="form-group">
+      <label for="worst_symmetry">worst_symmetry:</label>
+      <input type="text" id="worst_symmetry" name="worst_symmetry" placeholder="Enter z value (float)">
+    </div>
+
+    <div class="form-group">
+      <label for="worst_fractal_dimension">worst_fractal_dimension:</label>
+      <input type="text" id="worst_fractal_dimension" name="worst_fractal_dimension" placeholder="Enter z value (float)">
+    </div>
+
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+
+{{final_result}}
+</body>
+</html>
